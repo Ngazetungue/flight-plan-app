@@ -1,0 +1,254 @@
+{% extends 'travel/_base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+	
+	<header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-image: url('{% static "travel/images/img_bg_2.jpg" %}')">
+		<div class="overlay"></div>
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0 text-left">
+					
+					<div class="row row-mt-15em">
+						<div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
+							
+							<h1>Hi {{ user.username }}! <br> Plan Trip To Anywhere in The World..</h1>
+							
+								
+						</div>
+
+					</div>
+												
+				</div>
+				
+			</div>
+		</div>
+	</header>
+	
+	<div class="gtco-section">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+					<h2>My Flight Plan</h2>
+					<p>Where and when you need it!
+
+						Keep my flight plan at one place before booking..</p>
+				</div>
+			</div>
+			<div class="row">
+
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="{% static 'travel/images/img_1.jpg' %}" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="{% static 'travel/images/img_1.jpg' %}" alt="Image" class="img-responsive">
+						</figure>
+						<div class="fh5co-text">
+							<h2>New York, USA</h2>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="{% static 'travel/images/img_2.jpg' %}" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="{% static 'travel/images/img_2.jpg' %}" alt="Image" class="img-responsive">
+						</figure>
+						<div class="fh5co-text">
+							<h2>Seoul, South Korea</h2>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="{% static 'travel/images/img_3.jpg' %}" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="{% static 'travel/images/img_3.jpg' %}" alt="Image" class="img-responsive">
+						</figure>
+						<div class="fh5co-text">
+							<h2>Paris, France</h2>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							
+						</div>
+					</a>
+				</div>
+
+
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="{% static 'travel/images/img_4.jpg' %}" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="{% static 'travel/images/img_4.jpg' %}" alt="Image" class="img-responsive">
+						</figure>
+						<div class="fh5co-text">
+							<h2>Sydney, Australia</h2>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="{% static 'travel/images/img_5.jpg' %}" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="{% static 'travel/images/img_5.jpg' %}" alt="Image" class="img-responsive">
+						</figure>
+						<div class="fh5co-text">
+							<h2>Greece, Europe</h2>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="{% static 'travel/images/img_6.jpg' %}" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="{% static 'travel/images/img_6.jpg' %}" alt="Image" class="img-responsive">
+						</figure>
+						<div class="fh5co-text">
+							<h2>Spain, Europe</h2>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							
+						</div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<div id="gtco-features">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
+					<h2>How It Works</h2>
+					<p>Steps to use the Application.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<div class="feature-center animate-box" data-animate-effect="fadeIn">
+						<span class="icon">
+							<i>1</i>
+						</span>
+						<h3>Sign In / Sign Up</h3>
+						<p>You can sign in if you already have account or sign up to create account.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="feature-center animate-box" data-animate-effect="fadeIn">
+						<span class="icon">
+							<i>2</i>
+						</span>
+						<h3>Create Plan</h3>
+						<p>Create your flight plan before booking by clicking create plan button.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="feature-center animate-box" data-animate-effect="fadeIn">
+						<span class="icon">
+							<i>3</i>
+						</span>
+						<h3>View Plan</h3>
+						<p>You can easily view your plan after creating it. Remember first you have to login to view your plan.</p>
+					</div>
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="gtco-cover gtco-cover-sm" style="background-image: url(images/img_bg_1.jpg)"  data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="gtco-container text-center">
+			<div class="display-t">
+				<div class="display-tc">
+					<h1>The best application that you will surely love!</h1>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+	<div id="gtco-counter" class="gtco-section">
+		<div class="gtco-container">
+
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
+					<h2>Other Users</h2>
+					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				
+				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+					<div class="feature-center">
+						<span class="counter js-counter" data-from="0" data-to="196" data-speed="5000" data-refresh-interval="50">1</span>
+						<span class="counter-label">Destination</span>
+
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+					<div class="feature-center">
+						<span class="counter js-counter" data-from="0" data-to="97" data-speed="5000" data-refresh-interval="50">1</span>
+						<span class="counter-label">Hotels</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+					<div class="feature-center">
+						<span class="counter js-counter" data-from="0" data-to="12402" data-speed="5000" data-refresh-interval="50">1</span>
+						<span class="counter-label">Travelers</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+					<div class="feature-center">
+						<span class="counter js-counter" data-from="0" data-to="12202" data-speed="5000" data-refresh-interval="50">1</span>
+						<span class="counter-label">Happy Customer</span>
+
+					</div>
+				</div>
+					
+			</div>
+		</div>
+	</div>
+
+	
+
+	<div id="gtco-subscribe">
+		<div class="gtco-container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+					<h2>Subscribe</h2>
+					<p>Be the first to know about the new templates.</p>
+				</div>
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					<form class="form-inline">
+						<div class="col-md-6 col-sm-6">
+							<div class="form-group">
+								<label for="email" class="sr-only">Email</label>
+								<input type="email" class="form-control" id="email" placeholder="Your Email">
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<button type="submit" class="btn btn-default btn-block">Subscribe</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}

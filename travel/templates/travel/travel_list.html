@@ -1,0 +1,71 @@
+{% extends 'travel/_base.html' %}
+{% load static %}
+
+{% block title %}Plan list {% endblock title %}
+
+{% block content %}
+
+	
+	<header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image: url('{% static "travel/images/img_2.jpg" %}')">
+		<div class="overlay"></div>
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0 text-center">
+					<div class="row row-mt-15em">
+
+						<div class="col-md-12 mt-text animate-box" data-animate-effect="fadeInUp">
+							<h1>My Plans list </h1>	
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div class="gtco-section border-bottom">
+		<div class="gtco-container">
+			
+			<div class="row">
+				<div class="col-md-12">
+
+          
+          
+          <div class="row">
+			<div class="col-md-12">
+
+				<table class="table">
+					<thead>
+					  <tr>
+						
+						<th scope="col"><button class="btn btn-primary btn-block" >Download your Plan list in PDF format <a href="#">here.</a></button></th>
+
+					  </tr>
+					</thead>
+					{% for trip in trip_list %}
+					<tbody>
+				  
+					  <tr>
+						
+						<td> On the {{ trip.start }}, I am going to {{ trip.destination.name }}. <a href="{{ trip.get_absolute_url }}">Please click for more.... </a></td>
+						
+						
+					  </tr>
+					</tbody>
+					{% endfor %}
+				  </table>
+
+				</div>
+			</div>
+			
+		</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+
+{% endblock %}
