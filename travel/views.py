@@ -45,12 +45,12 @@ class TravelCreateView(LoginRequiredMixin, CreateView):
         form.instance.author = self.request.user
         return super().form_valid(form)
 
-class TravelUpdateView(UpdateView): 
+class TravelUpdateView(LoginRequiredMixin, UpdateView): 
     model = Trip
     template_name = 'travel/travel_edit.html'
     fields = ['start', 'end', 'activity']
 
-class TravelDeleteView(DeleteView):
+class TravelDeleteView(LoginRequiredMixin, DeleteView):
     model = Trip
     template_name = 'travel/travel_delete.html'
     success_url = reverse_lazy('travellist')
