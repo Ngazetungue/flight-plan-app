@@ -10,16 +10,6 @@ from django.shortcuts import render
 class HomePageView(TemplateView):
     template_name = 'travel/index.html'
     
-
-class DestinationPageView(TemplateView):
-    template_name = 'travel/destination.html'
-
-class PricingPageView(TemplateView):
-    template_name = 'travel/pricing.html'
-
-class ContactPageView(TemplateView):
-    template_name = 'travel/contact.html'
-
 class TravelListView(LoginRequiredMixin,ListView):
     model = Trip
     context_object_name = 'trip_list'

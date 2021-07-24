@@ -36,8 +36,8 @@
                     <div class="col-md-12">
                          {% csrf_token %}
                          {{ form | crispy }}
-                        <p>Are you sure you want to delete "{{ trip.activity}}"?</p>
-                         <button class="btn btn-primary btn-block" type="submit" value="Confirm">Delete</button>
+                        <p>Are you sure you want to delete "{{ trip.activity}}" ?</p>
+                         <button class="btn btn-danger btn-block" type="submit" value="Confirm">Delete</button>
                         
 
                     </div>

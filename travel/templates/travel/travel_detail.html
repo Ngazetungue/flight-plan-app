@@ -34,7 +34,9 @@
 							<h3><small>{{ trip_detail.start }} - {{ trip_detail.end }}</small>.</h3>
 							<p><strong>Activity - </strong> {{ trip_detail.activity }}.</p>
 							<br>
-							<p><button><a href="{% url 'travel_edit' trip_detail.pk %}">+ Edit Plan</a></button> ---- <button> <a href="{% url 'travel_delete' trip_detail.pk %}">+ Delete Plan list</a></button> ---- <button> <a href="{% url 'travellist' %}">+ Go Back to Plan</a></button></p>
+							<p><button class="btn btn-primary btn-block"><a href="{% url 'travel_edit' trip_detail.pk %}" style="color:white;">+ Edit Plan</a></button></p> 
+							<p><button class="btn btn-danger btn-block"> <a href="{% url 'travel_delete' trip_detail.pk %}">+ Delete Plan list</a></button></p>
+						
 						</li>
 					</ul>
 				</div>
