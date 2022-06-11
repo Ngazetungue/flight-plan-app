@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-u)zak*wjp%zeeck_z=+)!tzso$dcb5vv=(4l53143z6y28_aa9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['flightplan-app.herokuapp.com', '127.0.0.1']
 
@@ -43,12 +43,16 @@ INSTALLED_APPS = [
     # 
     'crispy_forms',
     'django_countries',
+    'django_htmx',
+    'widget_tweaks',
+    'django_extensions',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 AUTH_USER_MODEL = 'users.CustomUser'
 
 MIDDLEWARE = [
+    'django_htmx.middleware.HtmxMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

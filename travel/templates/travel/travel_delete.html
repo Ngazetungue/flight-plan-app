@@ -1,7 +1,8 @@
 {% extends 'travel/_base.html' %}
 {% load static %}
 {% load crispy_forms_tags %}
-
+{% load django_htmx %}
+{% django_htmx_script %}
 {% block title %}Delete Plan{% endblock title %}
 
 {% block content %} 
@@ -36,8 +37,9 @@
                     <div class="col-md-12">
                          {% csrf_token %}
                          {{ form | crispy }}
-                        <p>Are you sure you want to delete "{{ trip.activity}}" ?</p>
-                         <button class="btn btn-danger btn-block" type="submit" value="Confirm">Delete</button>
+                         <button hx-delete="{{ trip.activity}}" hx-confirm="Are you sure you wish to delete your account?">
+                            Delete My Account
+                        </button>
                         
 
                     </div>

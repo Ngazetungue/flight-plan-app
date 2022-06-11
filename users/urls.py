@@ -4,7 +4,8 @@ from django.contrib.auth.views import (
     LogoutView,
     
 )
-from .views import SignupPageView
+from users import views
+from .views import SignupPageView,check_username
 
 urlpatterns = [
     
@@ -13,3 +14,7 @@ urlpatterns = [
     path('logout/',LogoutView.as_view(), name='logout'),
     
 ]
+hmtx_views = [
+    path("check-username/", check_username, name='check-username'),
+]
+urlpatterns += hmtx_views
